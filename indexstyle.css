@@ -33,6 +33,8 @@ h2 {
     color: #00B7FF;
     margin: center; 
     margin-left: 35%;
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 .btn2{
     color: #00B7FF;
