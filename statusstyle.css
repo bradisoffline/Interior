@@ -1,0 +1,57 @@
+.logo{
+    width: 300px;
+    margin-left: 38%;
+    margin-top: 10%;
+}
+body {
+    background: url(background.png) no-repeat;
+    color: white;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+.seperator{
+    width: 300px;
+    margin-left: 39%;
+    margin-top: -5%;
+}
+h2 {
+    color: black;
+    text-align: center;
+}
+h3 {
+    color: red;
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 56%;
+    margin-top: -3.3%;
+    margin-left: 56%;
+    font-size: 18px;
+}
+.phyper {
+        text-decoration: none;
+        color: #00B7FF;
+        overflow: hidden;
+        position: relative;
+        bottom: 44px;
+        margin-left: 57%;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 22px;
+        }
+        a:visited {
+        color: #00B7FF;
+        }
+.crhyper {
+    text-decoration: none;
+    color: #00B7FF;
+    overflow: hidden;
+    position: relative;
+    bottom: 44px;
+    margin-left: 57%;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 22px;
+    }
+    a:visited {
+    color: #00B7FF;
+}
