@@ -1,4 +1,103 @@
-<form action="redirect.php" method="get">
-        <input name="mytext" />
-        <input type="submit" />
-      </form>
+<html>
+    <link rel="stylesheet" href="signinstyle.css">
+    <script>
+
+        document.onkeydown = function(e) {
+          if(e.keyCode == 123) {
+           return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+           return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+           return false;
+          }
+          if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+           return false;
+          }
+      
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+           return false;
+          }      
+       }
+
+       var message="[DOI] RIGHT CLICKING HAS BEEN DISABLED!";
+ 
+ ///////////////////////////////////
+ function clickIE4(){
+ if (event.button==2){
+ alert(message);
+ return false;
+ }
+ }
+  
+ function clickNS4(e){
+ if (document.layers||document.getElementById&&!document.all){
+ if (e.which==2||e.which==3){
+ alert(message);
+ return false;
+ }
+ }
+ }
+  
+ if (document.layers){
+ document.captureEvents(Event.MOUSEDOWN);
+ document.onmousedown=clickNS4;
+ }
+ else if (document.all&&!document.getElementById){
+ document.onmousedown=clickIE4;
+ }
+  
+ document.oncontextmenu=new Function("alert(message);return false")
+      </script>
+
+<head>
+
+<script>
+
+function Login(form) { username = new Array("u1","u2","u3"); password = new Array("p1","p2","p3"); page = "database" + ".html"; if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] ||
+
+form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] ||
+
+form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] ||
+
+form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] ||
+
+form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) { self.location.href = page; } else { alert("Either the username or password you entered is incorrect.\nPlease try again."); form.username.focus(); } return true; }
+
+</script> 
+
+</head> 
+<body bgcolor="#eeeeee"> 
+  
+  <form> 
+    <br> 
+    <center> 
+      <h5>ROBLOX Username: <br> <input type="text" 
+        
+        name="username" 
+        style="background:#E9967A;
+        color:black;
+        border-color:black;" 
+        onFocus="this.style.background = '#E9967A';"
+        
+
+onBlur="this.style.background = '#E9967A';"> 
+<br> Authentication Code: <input type="password" name="password" 
+style="background:#E9967A
+;color:black;
+border-color:black;" 
+onFocus="this.style.background = '#E9967A';"
+
+onBlur="this.style.background = '#E9967A';"> 
+<br> 
+<input type="button" value="Login." 
+onClick="Login(this.form);" 
+style="background:#2E86C1;
+color:black;
+border-color:#212121;" 
+onMouseOver="this.style.color ='#404040';" onMouseOut="this.style.color = '#000000';" onFocusr="this.style.color = '#404040';" onBlur="this.style.color = '#000000';"></h5> 
+</center> 
+</form> 
+</body> 
+</html>
